@@ -1,6 +1,6 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js';
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/controls/OrbitControls.js';
-import * as dat from 'https://cdn.jsdelivr.net/npm/lil-gui@0.19/+esm';
+import * as THREE from './libs/three/three.module.js';
+import { OrbitControls } from './libs/three/examples/jsm/controls/OrbitControls.js';
+import * as dat from './libs/lil-gui/lil-gui.esm.js';
 
 /**
  * Base
