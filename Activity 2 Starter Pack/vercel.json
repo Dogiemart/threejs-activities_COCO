@@ -1,7 +1,13 @@
 {
-  "rewrites": [
-    { "source": "/activity2-1", "destination": "/activity2-1.html" },
-    { "source": "/activity2-2", "destination": "/activity2-2.html" },
-    { "source": "/activity2-3", "destination": "/activity2-3.html" }
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "textures/**/*", "use": "@vercel/static" },
+    { "src": "*.js", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/activity2-1", "dest": "/activity2-1.html" },
+    { "src": "/activity2-2", "dest": "/activity2-2.html" },
+    { "src": "/activity2-3", "dest": "/activity2-3.html" }
   ]
 }
