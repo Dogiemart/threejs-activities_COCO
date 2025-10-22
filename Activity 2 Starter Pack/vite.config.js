@@ -1,7 +1,18 @@
+const isCodeSandbox = 'SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env
+
 export default {
-  root: '.', // make sure Vite uses the current folder
-  base: './texture', // ensures relative asset loading
-  build: {
-    outDir: 'dist', // output folder for Vercel
-  },
-};
+    root: 'src/',
+    publicDir: '../static/',
+    base: './',
+    server:
+    {
+        host: true,
+        open: !isCodeSandbox // Open if it's not a CodeSandbox
+    },
+    build:
+    {
+        outDir: '../dist',
+        emptyOutDir: true,
+        sourcemap: true
+    }
+}
