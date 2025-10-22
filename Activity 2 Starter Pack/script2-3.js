@@ -1,6 +1,6 @@
-import * as THREE from '../libs/three/three.module.js';
-import { OrbitControls } from '../libs/three/examples/jsm/controls/OrbitControls.js';
-import * as dat from '../libs/lil-gui/lil-gui.esm.js';
+import * as THREE from '/libs/three/three.module.js';
+import { OrbitControls } from '/libs/three/examples/jsm/controls/OrbitControls.js';
+import * as dat from '/libs/lil-gui/lil-gui.esm.js';
 
 /**
  * Base
