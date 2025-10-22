@@ -1,11 +1,17 @@
 {
-  "name": "threejs-activities",
-  "version": "1.0.0",
+  "name": "ITE-18 Activity 2.3 Haunted House",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "vite"
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^4.0.4"
   },
   "dependencies": {
-    "three": "^0.169.0",
-    "lil-gui": "^0.18.2"
+    "lil-gui": "^0.17.0",
+    "three": "^0.148.0"
   }
 }

@@ -3,31 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Three.js Activities Menu</title>
-
+    <title>COCO-Three.js Activities</title>
     <style>
-      /* ===== Base Styles ===== */
       body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background: radial-gradient(circle at center, #1b1b1b, #0d0d0d);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: radial-gradient(circle at center, #1a1a1a, #000);
         color: #fff;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 100vh;
+        margin: 0;
       }
 
       h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-      }
-
-      p {
-        color: #bbb;
         margin-bottom: 2rem;
+        font-size: 2rem;
+        text-align: center;
       }
 
       .menu {
@@ -36,43 +29,39 @@
         gap: 1rem;
       }
 
-      .menu a {
-        background: #00aaff;
-        color: white;
-        padding: 0.75rem 1.5rem;
-        border-radius: 0.5rem;
+      a {
         text-decoration: none;
-        font-size: 1rem;
-        transition: background 0.3s;
+        background: #00bcd4;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 8px;
+        transition: background 0.3s ease, transform 0.2s ease;
         text-align: center;
-        width: 220px;
+        font-size: 1.1rem;
       }
 
-      .menu a:hover {
-        background: #007acc;
+      a:hover {
+        background: #0097a7;
+        transform: scale(1.05);
       }
 
       footer {
-        position: absolute;
-        bottom: 1rem;
-        font-size: 0.9rem;
-        color: #666;
+        margin-top: 3rem;
+        font-size: 0.85rem;
+        color: #aaa;
       }
     </style>
   </head>
-  <body>
-    <!-- ===== Header ===== -->
-    <h1>Three.js Activities</h1>
-    <p>Select an activity to view</p>
 
-    <!-- ===== Menu Buttons ===== -->
+  <body>
+    <h1>Three.js Activities</h1>
+
     <div class="menu">
-      <a href="activity2_1/index.html" target="_blank">Activity 2.1 – Lights</a>
-      <a href="activity2_2/index.html" target="_blank">Activity 2.2 – Controls</a>
-      <a href="activity2_3/index.html" target="_blank">Activity 2.3 – Haunted House</a>
+      <a href="./activity2-1.html">Activity 2.1 Lights</a>
+      <a href="./activity2-2.html">Activity 2.2 Lighting Variations</a>
+      <a href="./activity2-3.html">Activity 2.3 Textures</a>
     </div>
 
-    <!-- ===== Footer ===== -->
-    <footer>Developed by Evan Jones | ITE-18 | ADTech</footer>
+    <footer>© 2025 Three.js Activities | Evan Jones</footer>
   </body>
 </html>
