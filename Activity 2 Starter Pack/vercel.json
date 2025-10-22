@@ -1,13 +1,6 @@
 {
-  "builds": [
-    { "src": "*.html", "use": "@vercel/static" },
-    { "src": "textures/**/*", "use": "@vercel/static" },
-    { "src": "*.js", "use": "@vercel/static" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
   ],
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/activity2-1", "dest": "/activity2-1.html" },
-    { "src": "/activity2-2", "dest": "/activity2-2.html" },
-    { "src": "/activity2-3", "dest": "/activity2-3.html" }
-  ]
+  "cleanUrls": true
 }
