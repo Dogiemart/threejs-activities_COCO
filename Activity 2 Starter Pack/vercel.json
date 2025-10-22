@@ -2,13 +2,5 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/$1" }
   ],
-  "cleanUrls": true,
-  "builds": [
-    {
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ]
+  "cleanUrls": true
 }
